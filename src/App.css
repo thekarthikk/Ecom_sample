@@ -1,38 +1,525 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 
+navbar css ----------------------------------------
+ */
+
+.container{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.menu{
+  display: none;
+}
+.vector{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.icon{
+  font-size: 2rem;
+}
+.logo{
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.icons{
+  display: flex;
+  align-items: center;
+}
+.search ,.heart,.bag,.profile{
+  font-size: 1.5rem;
+  margin: .5rem;
+  cursor: pointer;
+}
+.lang select{
+  border: none;
+  font-weight: bold;
+}
+@media screen and (max-width:789px) {
+  .container{
+    border-bottom: .5px solid lightgray;
+    margin-top: 1rem;
+    margin:1rem ;
+  }
+  .profile{
+    display: none;
+  }
+  .lang{
+    display: none;
+  }
+  .menu{
+    font-size: 1.5rem;
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* second navbar css ----------------------------------------- */
+
+.secondNav-container{
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ border-bottom: .5px solid lightgray;
+}
+.secondNav-container h4{
+  margin: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width:789px) {
+  .secondNav-container {
+    display: none;
+  }
+  
+}
+
+/* hero css   ----------------------------------------------------*/
+
+.hero-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.hiddendiv{
+  display: none;
+}
+.sub-container{
+  height: 10%;
+  width: 40%;
+  padding: 3rem;
+}
+.text{
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 200;
+}
+.paragraph{
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width:789px) {
+ 
+  .hiddendiv{
+    display: flex;
+  }
+  .home{
+    display: flex;
+  }
+  .home p{
+    font-size: 1rem;
+  }
+  .sub-container{
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .text{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .paragraph{
+    font-size: .8rem;
+  }
+}
+
+/* thirdnav css --------------------------------------------- */
+
+.hiddendiv2{
+  display: none;
+}
+.thirdnavbar{
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.subnav{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+.firstdiv{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.filter{
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.recommendations select{
+  border: NONE;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.recommendations option{
+  font-size: 1.2rem;
+  border: none;
+}
+@media screen and (max-width:789px) {
+  .hiddendiv2{
+    display: block;
+  }
+.hiddendiv2{
+  color: black ;
+}
+  .items{
+    display: none;
+  }
+  .subnav{
+    width: 100%;
+    margin: .5rem;
+  }
+  .filter{
+    display: none;
+  }
+}
+
+
+/* product list css ------------------------------------- */
+
+.product-container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.products{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.card {
+  height: auto;
+  width:  15rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card img{
+  height: 15rem;
+  width: 15rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.productcon{
+  display: flex;
+  flex-direction: column;
+  margin: .5rem;
+}
+.productcon p{
+  font-size: .6rem;
+}
+.textmain{
+  display: flex;
+}
+@media screen and (max-width:789px) {
+  .product-container{
+    width: 100%;
+  }
+  .products{
+    width: 100%;
+    margin: .2rem;
+  }
+  .card{
+    width: 10rem;
+    margin: .8rem;
+  }
+  .card img{
+    height: 10rem;
+    width:  10rem;
+  }
+  
+}
+/* filtersidebar css ----------------------------------- */
+
+.filter-sidebar {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.filter-option {
+  margin-bottom: 10px;
+}
+
+.filter-option h3 {
+  margin: 10px 0;
+}
+
+.filter-option label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* footer css ----------------------------------------------- */
+
+.foot-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.foot-sub-con{
+  display: flex;
+  width: 85%;
+  margin: 4rem;
+  border-bottom: 1px solid white;
+}
+.right{
+  width: 50%;
+}
+.foot-text1 ,.foot-text2{
+  margin: 1rem;
+}
+.searchbar{
+  margin: 1rem;
+  margin-top: 1.5rem;
+}
+.searchbar input{
+  font-size: medium;
+  height: 2.5rem;
+  width: 25rem;
+  border: none;
+}
+.searchbar button{
+  height: 2.5rem;
+  width: 8rem;
+  border: .5px solid lightgray;
+  margin-left: .5rem;
+  color: gray;
+  background-color: black;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.left{
+  width: 50%;
+}
+.usa{
+  display: flex;
+}
+.contact ,.number,.mail,.currency{
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.currency p{
+  font-size: .8rem;
+}
+.currency img{
+  /* margin-top: 1rem; */
+  height: 1.5rem;
+  width:  1.5rem;
+}
+@media screen and (max-width:789px) {
+  .foot-sub-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:2rem ;
   }
-  to {
-    transform: rotate(360deg);
+  .right{
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .foot-text1 ,.foot-text2{
+    margin: .5rem;
+  }
+  .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .9rem;
+  }
+  .searchbar input{
+    font-size: medium;
+    height: 2.5rem;
+    width: 15rem;
+    border: none;
+  }
+  .searchbar button{
+    height: 2.5rem;
+    width: 8rem;
+    border: .5px solid lightgray;
+    margin-left: .5rem;
+    color: grey;
+    background-color: black;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+  .left{
+    width: 100%;
+  }
+  .usa{
+    display: flex;
+    align-items: center;
+  }
+  .contact ,.number,.mail,.currency{
+    margin: 1rem;
+  }
+  .currency p{
+    display: none;
+  }
+  .currency h6{
+   font-size: .5rem;
+  }
+  .currency img{
+    margin-top: 0;
+    height: 2rem;
+    width:  2rem;  
+}}
+
+/* subfooter css ----------------------------------------------- */
+
+.sub-foot-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.subfoot{
+  width: 85%;
+  display: flex;
+}
+.footer1{
+  width: 30%;
+}
+.footer1 h2,p{
+  margin:1rem ;
+}
+.footer2{
+  width: 30%;
+}
+.footer2 h2,p{
+  margin:1rem ;
+}
+.footer3{
+  width: 40%;
+}
+.footer3 h2,p{
+  margin:1rem ;
+}
+.socialmedia{
+  display: flex;
+}
+.instagram,.linkedin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 2rem;
+  width:  2rem;
+  border: .5px solid white;
+  border-radius: 50%;
+  margin: .5rem;
+}
+.payicons{
+  display: flex;
+}
+.credit h3{
+  margin: 1rem;
+}
+.gpay,.amex,.applepay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 2rem;
+  width:  4rem;
+  background-color: white;
+  color: black;
+  border-radius: .5rem;
+  margin: 1rem;
+}
+.mastercard,.paypal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  height: 2rem;
+  width:  4rem;
+  background-color: white;
+  color: black;
+  border-radius: .5rem;
+  margin: 1rem;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width:789px) {
+  .footer1,.footer2{
+    display: none;
+  }
+  .footer3{
+    width: 100%;
+  }
+  .footer3 h2{
+    display: none;
+  }
+  .socialmedia{
+    display: none;
+  }
+  .instagram,.linkedin{
+   display: none;
+  }
+  .credit{
+    height: auto;
+    
+  }
+  .credit h3{
+    margin: 0;
+  }
+  .gpay,.amex,.applepay{ 
+    font-size: 2rem;
+    height: 2rem;
+    width:  4rem;
+    margin: .9rem;
+  }
+  .mastercard,.paypal{
+    font-size: 2rem;
+    height: 2rem;
+    width:  4rem;
+    margin: .9rem;
+  }
+  .copyright{
+    font-size:.8rem ;
   }
 }
