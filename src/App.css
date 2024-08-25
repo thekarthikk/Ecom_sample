@@ -40,8 +40,8 @@ navbar css ----------------------------------------
   display: flex;
   align-items: center;
 }
-.search ,.heart,.bag,.profile{
-  font-size: 1.5rem;
+.search ,.heartt,.bagg,.profile{
+  font-size: 1.6rem;
   margin: .5rem;
   cursor: pointer;
 }
@@ -81,6 +81,22 @@ navbar css ----------------------------------------
   margin: 1.5rem;
   cursor: pointer;
 }
+:hover.shop {
+  border-bottom: 3px solid black;
+}
+:hover.skills {
+  border-bottom: 3px solid black;
+}
+:hover.stories {
+  border-bottom: 3px solid black;
+}
+:hover.about {
+  border-bottom: 3px solid black;
+}
+:hover.contact {
+  border-bottom: 3px solid black;
+}
+
 @media screen and (max-width:789px) {
   .secondNav-container {
     display: none;
@@ -240,13 +256,21 @@ navbar css ----------------------------------------
   flex-direction: column;
   margin: .5rem;
 }
-.productcon p{
-  font-size: .6rem;
-}
 .textmain{
   display: flex;
 }
-@media screen and (max-width:789px) {
+.productcon p{
+  font-size: .6rem;
+  margin-left: .2rem;
+}
+.heart{
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+}
+@media screen and (max-width:600px) {
   .product-container{
     width: 100%;
   }
@@ -261,6 +285,10 @@ navbar css ----------------------------------------
   .card img{
     height: 10rem;
     width:  10rem;
+  }
+  .heart{
+    font-size: 1.5rem;
+    /* margin-top: .5rem; */
   }
   
 }

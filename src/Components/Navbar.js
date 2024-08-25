@@ -22,8 +22,8 @@ export default function () {
    <div className="main">
    <div className="icons">
     <div className="search"><CiSearch /></div>
-    <div className="heart"><CiHeart /></div>
-    <div className="bag"><PiHandbagBold /></div>
+    <div className="heartt"><CiHeart /></div>
+    <div className="bagg"><PiHandbagBold /></div>
     <div className="profile"><MdOutlinePersonOutline /></div>
    </div>
    <div className="lang">

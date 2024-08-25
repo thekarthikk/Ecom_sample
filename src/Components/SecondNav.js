@@ -4,11 +4,11 @@ export default function SecondNav() {
   return (
    <>
    <div className="secondNav-container">
-    <h4>SHOP</h4>
-    <h4>SKILLS</h4>
-    <h4>STORIES</h4>
-    <h4>ABOUT</h4>
-    <h4>CONTACT US</h4>
+    <h4 className='shop'>SHOP</h4>
+    <h4 className='skills'>SKILLS</h4>
+    <h4 className='stories'>STORIES</h4>
+    <h4 className='about'>ABOUT</h4>
+    <h4 className='contact'>CONTACT US</h4>
    </div>
    
    </>
