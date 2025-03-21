@@ -15,7 +15,7 @@ export default function Subfooter() {
     <div className="sub-foot-container">
         <div className="subfoot">
             <div className="footer1">
-                <h2>xyz.com</h2>
+                <h2>Website.com</h2>
                 <p>About Us</p>
                 <p>Stories</p>
                 <p>Artisans</p>
@@ -51,7 +51,7 @@ export default function Subfooter() {
             </div>
         </div>
     </div>
-    <div className="copyright"><p>Copyright © 2023 . All rights reserved </p></div>
+    <div className="copyright"><p>Copyright © 2025 . All rights reserved </p></div>
     </>
   )
 }

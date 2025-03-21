@@ -45,6 +45,9 @@ navbar css ----------------------------------------
   margin: .5rem;
   cursor: pointer;
 }
+.lang{
+  margin-bottom: .5rem;
+}
 .lang select{
   border: none;
   font-weight: bold;
@@ -55,6 +58,9 @@ navbar css ----------------------------------------
     margin-top: 1rem;
     margin:1rem ;
   }
+  .logo{
+    margin-bottom: .5rem;
+  }
   .profile{
     display: none;
   }
@@ -64,6 +70,7 @@ navbar css ----------------------------------------
   .menu{
     font-size: 1.5rem;
     display: block;
+    margin-bottom: .1rem;
   }
 }
 
@@ -242,6 +249,7 @@ navbar css ----------------------------------------
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 .card img{
   height: 15rem;
@@ -464,23 +472,26 @@ navbar css ----------------------------------------
 }
 .socialmedia{
   display: flex;
+  cursor: pointer;
 }
 .instagram,.linkedin{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   height: 2rem;
   width:  2rem;
-  border: .5px solid white;
+  border: 2px solid white;
   border-radius: 50%;
-  margin: .5rem;
+  margin: 1rem;
 }
 .payicons{
   display: flex;
+  cursor: pointer;
 }
 .credit h3{
   margin: 1rem;
+  cursor: pointer;
 }
 .gpay,.amex,.applepay{
   display: flex;
@@ -493,6 +504,7 @@ navbar css ----------------------------------------
   color: black;
   border-radius: .5rem;
   margin: 1rem;
+  cursor: pointer;
 }
 .mastercard,.paypal{
   display: flex;

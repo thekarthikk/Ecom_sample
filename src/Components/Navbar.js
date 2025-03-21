@@ -28,9 +28,9 @@ export default function () {
    </div>
    <div className="lang">
    <select>
-        <option>Eng</option>
-        {/* <option>Hin</option>
-        <option>Guj</option> */}
+        <option>English</option>
+        <option>French</option>
+        <option>Spanish</option>
     </select>
    </div>
    </div>

@@ -1,5 +1,4 @@
 import './App.css';
-import FilterSidebar from './Components/FilterSidebar';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
@@ -16,7 +15,6 @@ function App() {
    <Hero />
    <ThirdNavbar />
    <ProductList />
-   <FilterSidebar />
    <Footer />
    <Subfooter />
     </>

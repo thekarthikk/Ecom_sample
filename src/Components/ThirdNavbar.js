@@ -10,7 +10,7 @@ export default function ThirdNavbar() {
         <div className="subnav">
            <div className="firstdiv">
            <div className="hiddendiv2"><p>FILTER</p></div>
-           <div className="items"><h4>3425 ITEMS</h4></div>
+           <div className="items"><h4>425 ITEMS</h4></div>
            <div className="filter" ><IoIosArrowForward /><p>SHOW FILTER</p></div>
            </div>
             <div className="recommendations">
